@@ -1,47 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-21T14:10:51 IST" name="Default suite" finished-at="2024-12-21T14:10:59 IST" duration-ms="8780">
+  <suite started-at="2025-03-01T08:36:11 IST" name="Default suite" finished-at="2025-03-01T08:36:23 IST" duration-ms="12419">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" name="submitOrder" class="dhaneshproject.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-12-21T14:10:51 IST" name="Default test" finished-at="2024-12-21T14:10:59 IST" duration-ms="8780">
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" started-at="2024-12-21T14:10:51 IST" name="setUpClass" finished-at="2024-12-21T14:10:52 IST" duration-ms="895" status="PASS">
+    <test started-at="2025-03-01T08:36:11 IST" name="Default test" finished-at="2025-03-01T08:36:23 IST" duration-ms="12419">
+      <class name="dhaneshproject.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" started-at="2025-03-01T08:36:11 IST" name="launchApplication" finished-at="2025-03-01T08:36:15 IST" duration-ms="3934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" started-at="2025-03-01T08:36:15 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-01T08:36:19 IST" duration-ms="4104" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@37ad042b]]>
+                <![CDATA[{password=Dhanesh@123, email=dhanesh123@gmail.com, productName=ADIDAS ORIGINAL}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" started-at="2024-12-21T14:10:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-21T14:10:59 IST" duration-ms="7765" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" started-at="2025-03-01T08:36:19 IST" name="tearDown" finished-at="2025-03-01T08:36:20 IST" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" started-at="2025-03-01T08:36:20 IST" name="launchApplication" finished-at="2025-03-01T08:36:22 IST" duration-ms="2290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" started-at="2025-03-01T08:36:22 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-01T08:36:23 IST" duration-ms="842" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce website"]]>
+                <![CDATA[{password=Rajish@123, email=rajish123@gmail.com, productName=QWERTY}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at dhaneshproject.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:55)
+at dhaneshproject.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" started-at="2024-12-21T14:10:59 IST" name="tearDownClass" finished-at="2024-12-21T14:10:59 IST" duration-ms="48" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" started-at="2025-03-01T08:36:23 IST" name="tearDown" finished-at="2025-03-01T08:36:23 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestNGTestRunner -->
+        </test-method> <!-- tearDown -->
+        <test-method signature="orderHistory()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@6bbe85a8]" started-at="2025-03-01T08:36:23 IST" name="orderHistory" finished-at="2025-03-01T08:36:23 IST" depends-on-methods="dhaneshproject.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method dhaneshproject.tests.SubmitOrderTest.orderHistory() on instance dhaneshproject.tests.SubmitOrderTest@6bbe85a8 depends on not successfully finished methods 
+[dhaneshproject.tests.SubmitOrderTest.submitOrder() on instance dhaneshproject.tests.SubmitOrderTest@6bbe85a8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method dhaneshproject.tests.SubmitOrderTest.orderHistory() on instance dhaneshproject.tests.SubmitOrderTest@6bbe85a8 depends on not successfully finished methods 
+[dhaneshproject.tests.SubmitOrderTest.submitOrder() on instance dhaneshproject.tests.SubmitOrderTest@6bbe85a8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+      </class> <!-- dhaneshproject.tests.SubmitOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

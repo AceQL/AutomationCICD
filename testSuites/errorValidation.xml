@@ -6,12 +6,6 @@
 		<include name="Error Handling"/>
 	</run>
 </groups>
-
-  <test thread-count="5" name="SubmitOrderTest">
-    <classes>
-      <class name="dhaneshproject.tests.SubmitOrderTest"/>
-    </classes>
-  </test> 
   
   <test thread-count="5" name="ErrorValidationTest">
     <classes>

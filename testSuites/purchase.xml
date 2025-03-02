@@ -13,10 +13,5 @@
     </classes>
   </test> 
   
-  <test thread-count="5" name="ErrorValidationTest">
-    <classes>
-      <class name="dhaneshproject.tests.ErrorValidationTest"/>
-    </classes>
-  </test> 
   
 </suite> <!-- Suite -->

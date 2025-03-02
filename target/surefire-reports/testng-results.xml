@@ -1,98 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-18T14:27:06 IST" name="Suite" finished-at="2024-12-18T14:27:27 IST" duration-ms="21372">
+  <suite started-at="2025-03-02T09:04:17 IST" name="Suite" finished-at="2025-03-02T09:04:37 IST" duration-ms="20129">
     <groups>
-      <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" name="submitOrder" class="dhaneshproject.tests.SubmitOrderTest"/>
-      </group> <!-- Purchase -->
       <group name="Error Handling">
-        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" name="loginErrorValidation" class="dhaneshproject.tests.ErrorValidationTest"/>
-        <method signature="ErrorValidationTest.productErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" name="productErrorValidation" class="dhaneshproject.tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" name="loginErrorValidation" class="dhaneshproject.tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.productErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" name="productErrorValidation" class="dhaneshproject.tests.ErrorValidationTest"/>
       </group> <!-- Error Handling -->
     </groups>
-    <test started-at="2024-12-18T14:27:06 IST" name="ErrorValidationTest" finished-at="2024-12-18T14:27:19 IST" duration-ms="13309">
+    <test started-at="2025-03-02T09:04:17 IST" name="ErrorValidationTest" finished-at="2025-03-02T09:04:37 IST" duration-ms="20129">
       <class name="dhaneshproject.tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" started-at="2024-12-18T14:27:06 IST" name="launchApplication" finished-at="2024-12-18T14:27:11 IST" duration-ms="5228" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" started-at="2025-03-02T09:04:17 IST" name="launchApplication" finished-at="2025-03-02T09:04:24 IST" duration-ms="7187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" started-at="2024-12-18T14:27:11 IST" name="loginErrorValidation" finished-at="2024-12-18T14:27:13 IST" duration-ms="1239" status="PASS">
+        <test-method signature="loginErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" started-at="2025-03-02T09:04:24 IST" name="loginErrorValidation" finished-at="2025-03-02T09:04:25 IST" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" started-at="2024-12-18T14:27:13 IST" name="tearDown" finished-at="2024-12-18T14:27:13 IST" duration-ms="294" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" started-at="2025-03-02T09:04:25 IST" name="tearDown" finished-at="2025-03-02T09:04:26 IST" duration-ms="1264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" started-at="2024-12-18T14:27:13 IST" name="launchApplication" finished-at="2024-12-18T14:27:15 IST" duration-ms="2555" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" started-at="2025-03-02T09:04:26 IST" name="launchApplication" finished-at="2025-03-02T09:04:32 IST" duration-ms="6178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="productErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" started-at="2024-12-18T14:27:15 IST" name="productErrorValidation" finished-at="2024-12-18T14:27:19 IST" duration-ms="3653" status="PASS">
+        <test-method signature="productErrorValidation()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" started-at="2025-03-02T09:04:32 IST" name="productErrorValidation" finished-at="2025-03-02T09:04:36 IST" duration-ms="3507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@29d80d2b]" started-at="2024-12-18T14:27:19 IST" name="tearDown" finished-at="2024-12-18T14:27:19 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.ErrorValidationTest@74e52303]" started-at="2025-03-02T09:04:36 IST" name="tearDown" finished-at="2025-03-02T09:04:37 IST" duration-ms="1434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- dhaneshproject.tests.ErrorValidationTest -->
     </test> <!-- ErrorValidationTest -->
-    <test started-at="2024-12-18T14:27:06 IST" name="SubmitOrderTest" finished-at="2024-12-18T14:27:27 IST" duration-ms="21372">
-      <class name="dhaneshproject.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:07 IST" name="launchApplication" finished-at="2024-12-18T14:27:10 IST" duration-ms="3309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:10 IST" name="submitOrder" data-provider="getData" finished-at="2024-12-18T14:27:17 IST" duration-ms="6541" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Dhanesh@123, email=dhanesh123@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:17 IST" name="tearDown" finished-at="2024-12-18T14:27:17 IST" duration-ms="497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:17 IST" name="launchApplication" finished-at="2024-12-18T14:27:20 IST" duration-ms="2615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:20 IST" name="submitOrder" data-provider="getData" finished-at="2024-12-18T14:27:24 IST" duration-ms="4797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Rajish@123, email=rajish123@gmail.com, productName=ZARA COAT 3}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:24 IST" name="tearDown" finished-at="2024-12-18T14:27:25 IST" duration-ms="315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:25 IST" name="launchApplication" finished-at="2024-12-18T14:27:26 IST" duration-ms="1650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="orderHistory()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:26 IST" name="orderHistory" finished-at="2024-12-18T14:27:27 IST" depends-on-methods="dhaneshproject.tests.SubmitOrderTest.submitOrder" duration-ms="861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderHistory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:dhaneshproject.tests.SubmitOrderTest@247310d0]" started-at="2024-12-18T14:27:27 IST" name="tearDown" finished-at="2024-12-18T14:27:27 IST" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- dhaneshproject.tests.SubmitOrderTest -->
-    </test> <!-- SubmitOrderTest -->
   </suite> <!-- Suite -->
 </testng-results>
